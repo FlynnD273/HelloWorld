@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Hello World</string>
+    <string name="changedText">Yo! This Worked!</string>
+    <string name="ButtonLabel">Change Text Color</string>
+    <string name="OriginalText">Hello from Flynn!</string>
+    <string name="buttonChangeBackgroundColorValue">Change Background Color</string>
+</resources>
