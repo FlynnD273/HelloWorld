@@ -39,7 +39,6 @@ public class MainActivity extends AppCompatActivity {
     public View background;
     public TextView text;
     public EditText editText;
-    public Button textColorButton;
     public Random random = new Random();
     public int alpha = 255;
     public boolean colorMode;
@@ -69,20 +68,6 @@ public class MainActivity extends AppCompatActivity {
         setAlpha();
     }
 
-    public void toggleMode(View v)
-    {
-        colorMode = !colorMode;
-
-        if(colorMode)
-        {
-            textColorButton.setVisibility(View.INVISIBLE);
-        }
-        else
-        {
-            textColorButton.setVisibility(View.VISIBLE);
-        }
-    }
-
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -90,7 +75,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         background = findViewById(R.id.background);
         text = (TextView) findViewById(R.id.displayText);
-        textColorButton = (Button) findViewById(R.id.buttonChangeTextColor);
 
         editText = (EditText) findViewById(R.id.editText);
         editText.setOnEditorActionListener(new TextView.OnEditorActionListener()
