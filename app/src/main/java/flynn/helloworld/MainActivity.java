@@ -5,11 +5,16 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.content.ContextCompat;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.text.format.Time;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import java.util.Date;
 import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
@@ -102,6 +107,6 @@ public class MainActivity extends AppCompatActivity {
         editText.setTextColor(Color.rgb(Color.red(text.getCurrentTextColor()), Color.green(text.getCurrentTextColor()), Color.blue(text.getCurrentTextColor())));
 
         color = ((ColorDrawable)background.getBackground()).getColor();
-        background.setBackgroundColor(Color.argb(255, Color.red(color) + (Color.red(backgroundCol)-Color.red(color))/tSpeed, Color.green(color) + (Color.green(backgroundCol)-Color.green(color))/tSpeed, Color.blue(color) + (Color.blue(backgroundCol)-Color.blue(color))/tSpeed));
+        background.setBackgroundColor(Color.rgb(Color.red(color) + (Color.red(backgroundCol)-Color.red(color))/tSpeed, Color.green(color) + (Color.green(backgroundCol)-Color.green(color))/tSpeed, Color.blue(color) + (Color.blue(backgroundCol)-Color.blue(color))/tSpeed));
     }
 }
