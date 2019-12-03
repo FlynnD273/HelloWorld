@@ -99,9 +99,9 @@ public class MainActivity extends AppCompatActivity {
     {
         int color = text.getCurrentTextColor();
         text.setTextColor(Color.argb(alpha, Color.red(color) + (Color.red(textCol)-Color.red(color))/tSpeed, Color.green(color) + (Color.green(textCol)-Color.green(color))/tSpeed, Color.blue(color) + (Color.blue(textCol)-Color.blue(color))/tSpeed));
-        editText.setTextColor(text.getCurrentTextColor());
+        editText.setTextColor(Color.rgb(Color.red(text.getCurrentTextColor()), Color.green(text.getCurrentTextColor()), Color.blue(text.getCurrentTextColor())));
 
         color = ((ColorDrawable)background.getBackground()).getColor();
-        background.setBackgroundColor(Color.argb(alpha, Color.red(color) + (Color.red(backgroundCol)-Color.red(color))/tSpeed, Color.green(color) + (Color.green(backgroundCol)-Color.green(color))/tSpeed, Color.blue(color) + (Color.blue(backgroundCol)-Color.blue(color))/tSpeed));
+        background.setBackgroundColor(Color.argb(255, Color.red(color) + (Color.red(backgroundCol)-Color.red(color))/tSpeed, Color.green(color) + (Color.green(backgroundCol)-Color.green(color))/tSpeed, Color.blue(color) + (Color.blue(backgroundCol)-Color.blue(color))/tSpeed));
     }
 }
