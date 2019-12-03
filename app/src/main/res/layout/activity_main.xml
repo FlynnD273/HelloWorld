@@ -8,6 +8,7 @@
     android:layout_height="match_parent"
     android:background="@android:color/holo_blue_bright"
     android:id="@+id/background"
+    android:focusableInTouchMode="true"
     android:onClick="ResetView"
     tools:context="flynn.helloworld.MainActivity"
     tools:layout_editor_absoluteY="81dp"
