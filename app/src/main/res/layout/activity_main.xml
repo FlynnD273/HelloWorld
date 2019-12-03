@@ -73,7 +73,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:textStyle="bold"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:inputType="textCapSentences"
         android:text="Change the Message"
         tools:ignore="HardcodedText"

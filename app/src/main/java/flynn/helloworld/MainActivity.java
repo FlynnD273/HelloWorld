@@ -15,6 +15,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import java.util.Date;
+import java.util.List;
 import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
@@ -27,15 +28,20 @@ public class MainActivity extends AppCompatActivity {
     public int backgroundCol;
     public int textCol;
     public int tSpeed = 7;
+    public int textColId = 0;
+    public int backColId = 1;
+    public int[] colors;
 
     public void ChangeColor(View v)
     {
-        textCol = Color.rgb(random.nextInt(255),random.nextInt(255),random.nextInt(255));
+        //textCol = Color.rgb(random.nextInt(255),random.nextInt(255),random.nextInt(255));
+        textCol = colors[textColId++%colors.length];
     }
 
     public void ChangeBackground(View v)
     {
-        backgroundCol = Color.rgb(random.nextInt(255),random.nextInt(255),random.nextInt(255));
+        //backgroundCol = Color.rgb(random.nextInt(255),random.nextInt(255),random.nextInt(255));
+        backgroundCol = colors[backColId++%colors.length];
     };
 
     public void ResetView(View v)
@@ -85,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
         );
-
+        colors = new int[]{ContextCompat.getColor(getApplicationContext(), android.R.color.holo_green_dark), ContextCompat.getColor(getApplicationContext(), android.R.color.holo_blue_bright), ContextCompat.getColor(getApplicationContext(), android.R.color.holo_blue_dark), ContextCompat.getColor(getApplicationContext(), android.R.color.holo_blue_light), ContextCompat.getColor(getApplicationContext(), android.R.color.holo_green_light), ContextCompat.getColor(getApplicationContext(), android.R.color.holo_orange_dark), ContextCompat.getColor(getApplicationContext(), android.R.color.holo_orange_light), ContextCompat.getColor(getApplicationContext(), android.R.color.holo_purple), ContextCompat.getColor(getApplicationContext(), android.R.color.holo_red_dark), ContextCompat.getColor(getApplicationContext(), android.R.color.holo_red_light)};
         final Handler handler = new Handler();
         handler.post(new Runnable(){
             @Override
