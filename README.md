@@ -3,7 +3,7 @@
 ### This App allows you to change the background and text colors with the press of a button! You can also change what the text displays using a text field just above the display.
 
 ### App Walk-though
-<img src="https://github.com/K9shyguy/HelloWorld/blob/master/Submission%20for%20Codepath.gif" width=200><br>
+<img src="https://github.com/K9shyguy/HelloWorld/blob/master/Submission%20for%20Codepath2.gif" width=200><br>
 
 ### Required User Stories
 - [x] 1. User sees custom text in a label - Hello from {name}!
